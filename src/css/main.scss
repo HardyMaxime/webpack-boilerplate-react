@@ -1,0 +1,41 @@
+/* Variables
+   ========================================================================== */
+$color: #000;
+$BackgroundColor : #fafafa;
+$fontSize : 16px;
+
+/* MISC
+   ========================================================================== */
+// @import "tools/reset";
+@import "tools/reset";
+@import "tools/helpers";
+@import "tools/variablesResponsive";
+
+/* Generic
+   ========================================================================== */
+body {
+    font-size: $fontSize;
+    color: inherit;
+    background: $BackgroundColor;
+    overflow-x: hidden;
+}
+
+h1 {
+    @include fontSize(50px);
+    padding-bottom: 25px;
+}
+
+/* Tools
+   ========================================================================== */
+@import "tools/layout";
+
+/* Modules
+   ========================================================================== */
+// @import "modules/comments";
+
+/* Pages
+   ========================================================================== */
+// @import "pages/single";
+// @import "pages/single";
+// @import "pages/single";
+// @import "pages/single";
