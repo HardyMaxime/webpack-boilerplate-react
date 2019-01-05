@@ -58,7 +58,7 @@ const config = {
       },
       {
        test: /\.(jsx|js)$/,
-        use: 'babel-loader',
+        use: ['react-hot-loader/webpack', 'babel-loader'],
         exclude: /node_modules/
       },
       {
@@ -165,6 +165,7 @@ const config = {
 // Env specific plugins
 if (dev) {
   config.plugins.push(new BundleAnalyzerPlugin({ openAnalyzer: false }))// default port 8888
+  config.entry.main.push('react-hot-loader/patch')
 } else {
   config.plugins.push(new ManifestPlugin())
 }
