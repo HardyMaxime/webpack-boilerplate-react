@@ -94,7 +94,9 @@ const config = {
                   sort: true
                 }),
                 require('cssnano')(),
-                require('postcss-preset-env')()
+                require('postcss-preset-env')({
+                  browsers: '> .5% or last 2 versions'
+                })
               ]
             }
           },
