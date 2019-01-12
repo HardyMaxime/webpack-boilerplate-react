@@ -23,7 +23,7 @@ const config = {
     main: [`${assetPath}/index.html`, `${assetPath}/css/main.scss`, `${assetPath}/js/main.js`]
   },
   mode: dev ? 'development' : 'production',
-  // devtool: dev ? 'cheap-module-eval-source-map' : false,
+  devtool: dev ? 'cheap-module-eval-source-map' : false,
   externals: {
     // jquery: 'jQuery'
   },
@@ -88,12 +88,13 @@ const config = {
               sourceMap: dev,
               plugins: [
                 require('autoprefixer')({
-                  browsers: ['last 2 versions', 'ie > 8']
+                  browsers: ['last 2 versions', 'ie > 7']
                 }),
                 require('css-mqpacker')({
                   sort: true
                 }),
-                require('cssnano')()
+                require('cssnano')(),
+                require('postcss-preset-env')()
               ]
             }
           },
