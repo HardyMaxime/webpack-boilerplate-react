@@ -15,7 +15,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // Load configuration from a .env
-//require('dotenv').config({path: path.resolve(process.cwd(), '.env')})
+// require('dotenv').config({path: path.resolve(process.cwd(), '.env')})
 
 // The brain
 const config = {
