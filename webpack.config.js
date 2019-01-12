@@ -15,7 +15,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // Load configuration from a .env
-// require('dotenv').config({path: path.resolve(process.cwd(), '.env')})
+//require('dotenv').config({path: path.resolve(process.cwd(), '.env')})
 
 // The brain
 const config = {
@@ -23,7 +23,7 @@ const config = {
     main: [`${assetPath}/index.html`, `${assetPath}/css/main.scss`, `${assetPath}/js/main.js`]
   },
   mode: dev ? 'development' : 'production',
-  // devtool: dev ? 'cheap-module-eval-source-map' : false,
+  devtool: dev ? 'cheap-module-eval-source-map' : false,
   externals: {
     // jquery: 'jQuery'
   },
