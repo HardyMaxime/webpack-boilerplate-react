@@ -95,7 +95,7 @@ const config = {
                 }),
                 require('cssnano')(),
                 require('postcss-preset-env')({
-                  browsers: '> .5% or last 2 versions'
+                  browsers: 'last 2 versions'
                 })
               ]
             }
