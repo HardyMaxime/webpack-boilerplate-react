@@ -1,7 +1,7 @@
 /* Variables
    ========================================================================== */
-$color: #000;
-$BackgroundColor : #fafafa;
+$color: #fff;
+$BackgroundColor : #23272c;
 $fontSize : 16px;
 
 /* MISC
@@ -15,7 +15,7 @@ $fontSize : 16px;
    ========================================================================== */
 body {
     font-size: $fontSize;
-    color: inherit;
+    color: $color;
     background: $BackgroundColor;
     overflow-x: hidden;
 }
