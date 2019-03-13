@@ -74,7 +74,7 @@ const config = {
         test: /\.(scss|css)$/,
         use: [
           {
-            loader: dev ? 'style-loader' : MiniCssExtractPlugin.loader
+            loader: MiniCssExtractPlugin.loader
           },
           {
             loader: 'css-loader',
